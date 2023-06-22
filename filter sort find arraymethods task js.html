@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const users = [
+
+{
+    id :3 ,
+    name : "user3" ,
+    gender : "female"
+}
+ ,
+{
+    id :2 ,
+    name : "user2" ,
+    gender : "male"
+}
+ ,
+{
+    id :1 ,
+    name : "user1" ,
+    gender : "female"
+}
+
+
+] ;
+//  1. filter method
+
+const filterarray = users.filter( currval =>  currval.gender === "male" );
+    
+
+
+
+console.log(filterarray) ;
+
+
+// 2. find method
+
+const findarray = users.filter( findval =>  findval.id === 3 );
+console.log(findarray) ;
+
+
+//  3. sort method
+
+
+const sortarray = users.sort( (a,b) =>  a.id - b.id );
+console.log(sortarray) ;
+
+    </script>
+</body>
+</html>
